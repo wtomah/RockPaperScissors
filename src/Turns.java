@@ -7,6 +7,8 @@ public class Turns {
         Scanner sc = new Scanner(System.in);
         //Random
         Random random = new Random();
+        System.out.println("Welcome to Rock, Paper, Scissors");
+        System.out.println("Rock = 1, Scissors = 2, Paper = 3");
         System.out.println("Player 1's Turn");
         //User Input
         int p1 = sc.nextInt();
