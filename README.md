@@ -1,18 +1,10 @@
-## Getting Started
+## Rock, Paper, Scissors
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A childhood game that is played among all ages. In this project, the user will play against a computer in order to win.
 
-## Folder Structure
+## Current Progress
 
-The workspace contains two folders by default, where:
+This project is currently developed in Java. As of right now, the user will enter a main menu and have the choice of starting a game or exiting. Once starting the game, the player will pick between 1, 2, or 3 (rock, scissors, paper) and the computer will randomly chose among those numbers. The outputs that will appear will either be "Player 1 wins", "Player 2 wins" or "Tie". After this output, the program will end.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Incoming Features
+I plan on adding a submenu within the "Start A Game" selection so that the player may choose between "Single", "Best of 3", "Best of 5" or "Best of 7". I will be adding a database so that players may keep track of their record against the computer. After the backend and database are running efficiently, I will develop the frontend.
