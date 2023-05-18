@@ -1,8 +1,8 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Turns {
-    public static void turns(){
+public class Games {
+    public static void singleGame(){
         //User Input
         Scanner sc = new Scanner(System.in);
         //Random

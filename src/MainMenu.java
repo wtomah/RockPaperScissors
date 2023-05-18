@@ -12,7 +12,8 @@ public class MainMenu {
         int choice = sc.nextInt();
 
         if (choice == 1) {
-            Turns.turns();
+
+            gameMenu();
         } else if (choice == 2){
             System.exit(0);
         }
@@ -21,4 +22,18 @@ public class MainMenu {
 
 
     }
+    public static void gameMenu(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Single Game");
+        System.out.println("2. Best of 3");
+        System.out.println("3. Best of 5");
+        System.out.println("4. Best of 7");
+        int choice = sc.nextInt();
+        if (choice == 1) {
+
+            Games.singleGame();
+        }
+
+    }
+
     }
