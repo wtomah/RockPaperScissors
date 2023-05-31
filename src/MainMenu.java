@@ -33,6 +33,9 @@ public class MainMenu {
 
             Games.singleGame();
         }
+        if (choice == 2){
+            Games.gameOfThree();
+        }
 
     }
 
