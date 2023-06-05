@@ -20,27 +20,33 @@ public class Games {
         System.out.println("Player 1 selected: " + p1);
         System.out.println("Player 2 selected: " + p2);
 
-
         //if conditionals for Rock, Paper, Scissors
         // 1- Rock
         // 2-Paper
         //3-Scissors
         if (p1 == 1 && p2 == 3) {
-            System.out.println("Player 1 Wins");
+            System.out.println("Player 1 Wins\t");
         } else if (p1 == 2 && p2 == 1) {
-            System.out.println("Player 1 Wins");
+            System.out.println("Player 1 Wins\t");
         } else if (p1 == 3 && p2 == 2) {
-            System.out.println("Player 1 Wins");
+            System.out.println("Player 1 Wins\t");
         } else if (p1 == 2 && p2 == 3) {
-            System.out.println("Player 2 Wins");
+            System.out.println("Player 2 Wins\t");
         } else if (p1 == 3 && p2 == 1) {
-            System.out.println("Player 2 Wins");
+            System.out.println("Player 2 Wins\t");
         } else if (p1 == 1 && p2 == 2) {
-            System.out.println("Player 2 Wins");
-        } else {
-            System.out.println("Tie");
+            System.out.println("Player 2 Wins\t");
+        } else if ( p1 < 1 || p1 > 3) {
+            System.out.println("Wrong Choice!. Choose again\t");
+            singleGame();
+        }else {
+            System.out.println("Tie\t");
+            singleGame();
         }
+
     }
+
+
 
     public static void gameOfThree() {
         int player_1_count = 0;
@@ -66,30 +72,33 @@ public class Games {
             if (p1 == 1 && p2 == 3) {
                 System.out.println("Player 1 Wins");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 2 && p2 == 1) {
                 System.out.println("Player 1 Wins");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 3 && p2 == 2) {
                 System.out.println("Player 1 Wins");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 2 && p2 == 3) {
                 System.out.println("Player 2 Wins");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 3 && p2 == 1) {
                 System.out.println("Player 2 Wins");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 1 && p2 == 2) {
                 System.out.println("Player 2 Wins");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
+            } else if ( p1 < 1 || p1 > 3) {
+                System.out.println("Wrong Choice!. Choose again");
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else {
                 System.out.println("Tie");
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             }
         }
 
@@ -109,7 +118,7 @@ public class Games {
             System.out.println("Player 1's Turn");
             //User Input
             int p1 = sc.nextInt();
-            System.out.println("Player 2's Turn");
+            System.out.println("Player 2's Turn\n");
             //Parameters of Random
             int p2 = random.nextInt(1, 4);
 
@@ -117,35 +126,39 @@ public class Games {
             System.out.println("Player 2 selected: " + p2);
             //if conditionals for Rock, Paper, Scissors
             if (p1 == 1 && p2 == 3) {
-                System.out.println("Player 1 Wins");
+                System.out.println("Player 1 Wins\n");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
             } else if (p1 == 2 && p2 == 1) {
-                System.out.println("Player 1 Wins");
+                System.out.println("Player 1 Wins\n");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
             } else if (p1 == 3 && p2 == 2) {
-                System.out.println("Player 1 Wins");
+                System.out.println("Player 1 Wins\n");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
             } else if (p1 == 2 && p2 == 3) {
-                System.out.println("Player 2 Wins");
+                System.out.println("Player 2 Wins\n");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
             } else if (p1 == 3 && p2 == 1) {
-                System.out.println("Player 2 Wins");
+                System.out.println("Player 2 Wins\n");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
             } else if (p1 == 1 && p2 == 2) {
-                System.out.println("Player 2 Wins");
+                System.out.println("Player 2 Wins\n");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
+            } else if ( p1 < 1 || p1 > 3) {
+                System.out.println("Wrong Choice!. Choose again\n");
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
             } else {
-                System.out.println("Tie");
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("Tie\n");
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\n");
             }
         }
-    }
+        }
+
 
     public static void gameOfSeven() {
         int player_1_count = 0;
@@ -171,30 +184,33 @@ public class Games {
             if (p1 == 1 && p2 == 3) {
                 System.out.println("Player 1 Wins");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 2 && p2 == 1) {
                 System.out.println("Player 1 Wins");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 3 && p2 == 2) {
                 System.out.println("Player 1 Wins");
                 player_1_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 2 && p2 == 3) {
                 System.out.println("Player 2 Wins");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 3 && p2 == 1) {
                 System.out.println("Player 2 Wins");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else if (p1 == 1 && p2 == 2) {
                 System.out.println("Player 2 Wins");
                 player_2_count++;
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
+            } else if ( p1 < 1 || p1 > 3) {
+                System.out.println("Wrong Choice!. Choose again");
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             } else {
                 System.out.println("Tie");
-                System.out.println("The Score is " + player_1_count + " to " + player_2_count);
+                System.out.println("The Score is " + player_1_count + " to " + player_2_count + ".\t");
             }
         }
 
