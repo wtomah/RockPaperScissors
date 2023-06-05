@@ -17,6 +17,10 @@ public class MainMenu {
         } else if (choice == 2){
             System.exit(0);
         }
+        else {
+            System.out.println("Wrong Choice");
+            menu();
+        }
 
     }
     public static void gameMenu(){
