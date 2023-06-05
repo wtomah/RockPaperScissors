@@ -18,9 +18,6 @@ public class MainMenu {
             System.exit(0);
         }
 
-
-
-
     }
     public static void gameMenu(){
         Scanner sc = new Scanner(System.in);
@@ -33,8 +30,18 @@ public class MainMenu {
 
             Games.singleGame();
         }
-        if (choice == 2){
+        else if (choice == 2){
             Games.gameOfThree();
+        }
+        else if (choice == 3){
+            Games.gameOfFive();
+        }
+        else if (choice == 4){
+            Games.gameOfSeven();
+        }
+        else{
+            System.out.println("Wrong Choice");
+            gameMenu();
         }
 
     }
