@@ -29,7 +29,7 @@ public class MainMenu {
         System.out.println("2. Best of 3");
         System.out.println("3. Best of 5");
         System.out.println("4. Best of 7");
-        System.out.println("5. Go Back to Main Menu");
+        System.out.println("5. Back to Main Menu");
         System.out.println("6. Exit");
         int choice = sc.nextInt();
         if (choice == 1) {
